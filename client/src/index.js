@@ -7,6 +7,7 @@ import App from "./App";
 import "./index.css";
 import "@mui/material/Icon";
 import "remixicon/fonts/remixicon.css";
+
 import { BrowserRouter as Router } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>

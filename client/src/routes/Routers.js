@@ -6,13 +6,15 @@ import FoodDetail from '../pages/FoodDetail';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import About from '../pages/About';
-import Contact from '../pages/Contact' ;     
+import Contact from '../pages/Contact' ;   
+import Favorite from '../pages/Favorite';  
 
 const Routers =() =>{
   return <Routes>
     <Route path='/' element={<Navigate to='/home'/>}/>
     <Route path='/home' element={<Home/>}/>
     <Route path='/foods' element={<AllFood/>}/>
+    <Route path='/favorite' element={<Favorite/>}/>
     <Route path='/foods/:id' element={<FoodDetail/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/register' element={<Register/>}/>

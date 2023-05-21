@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Helmet = () => {
-    document.title = ''
+const Helmet = (props) => {
+    document.title = 'Fooddo' 
   return (
-    <div>Helmet</div>
+    <div className='w-100'>{props.children}</div>
   )
 }
 
-export default Helmet
+export default Helmet;

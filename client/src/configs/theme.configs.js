@@ -1,8 +1,9 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
+import { colors } from "@mui/material";
 
-const themeModes = {
-  light: 'light',
-  dark: 'dark',
+export const themeModes = {
+  dark: "dark",
+  light: "light"
 };
 
 const themeConfigs = {
@@ -19,10 +20,6 @@ const themeConfigs = {
       background: {
         default: "#000000",
         paper: "#131313"
-      },
-      text: {
-        primary: "#ffffff",
-        secondary: "#aaaaaa"
       }
     } : {
       primary: {
@@ -32,19 +29,22 @@ const themeConfigs = {
         main: "#f44336"
       },
       background: {
-        default: "#ffffff",
-        paper: "#f5f5f5"
-      },
-      text: {
-        primary: "#000000",
-        secondary: "#ffffff"
+        default: colors.grey["100"],
       }
     };
 
     return createTheme({
-      palette: customPalette,
+      palette: {
+        mode,
+        ...customPalette
+      },
+      components: {
+        MuiButton: {
+          defaultProps: { disableElevation: true }
+        }
+      }
     });
-  },
+  }
 };
 
-export { themeConfigs, themeModes };
+export default themeConfigs;

@@ -17,8 +17,7 @@ const Home = () => {
             alt="Slide 1"
           />
           <Carousel.Caption className="text-center"> 
-            <h3>Slide 1</h3>
-            <p>Description for Slide 1</p>
+            <p>The beauty of healthy food is not only visible from its appearance, but also provides benefits for the well-being of the soul.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -38,8 +37,7 @@ const Home = () => {
             alt="Slide 2"
           />
           <Carousel.Caption className="text-center">
-            <h3>Slide 2</h3>
-            <p>Description for Slide 2</p>
+            <p>Get the best nutrition from natural foods rich in vitamins, minerals and fiber. Make healthy choices for a better life!</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
